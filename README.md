@@ -19,19 +19,34 @@ The system was developed as part of a Master's research project and combines dat
 ## Project Structure
 
 ```
-CyberAttackDetectionSystem
+CyberAttackDetectionSystem/
+
 │
+
 ├── data/
+
 ├── experiments/
-│   ├── E01_ModelComparison
-│   ├── E02_FeatureSelection
-│   ├── E03_HyperparameterOptimization
-│   ├── E04_ModelExplainability
-│   └── E05_FlaskWebApplication
+
+│      E01_ModelComparison
+
+│      E02_FeatureSelection
+
+│      E03_HyperparameterOptimization
+
+│      E04_ModelExplainability
+
+│      E05_WebApplication
+
 │
+
 ├── flask_app/
-├── models/
-├── requirements.txt
+
+├── notebooks/
+
+├── test_files/
+
+├── docs/
+
 └── README.md
 ```
 
