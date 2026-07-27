@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="alert alert-danger shadow">
+
+<h2>
+
+Invalid CSV File
+
+</h2>
+
+<p>
+
+The uploaded CSV file is missing one or more required features.
+
+</p>
+
+<h5>
+
+Missing Columns
+
+</h5>
+
+<ul>
+
+{% for col in missing %}
+
+<li>{{ col }}</li>
+
+{% endfor %}
+
+</ul>
+
+<a
+
+href="/"
+
+class="btn btn-primary">
+
+Return Home
+
+</a>
+
+</div>
+
+{% endblock %}

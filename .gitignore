@@ -1,0 +1,67 @@
+# ===============================
+#  Python + Machine Learning Projects
+# ===============================
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual Environments
+venv/
+.env/
+.venv/
+
+# Build and distribution folders
+build/
+dist/
+*.egg-info/
+
+# ===============================
+#  Jupyter & Notebooks
+# ===============================
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# ===============================
+#  Data files (large or private)
+# ===============================
+data/
+datasets/
+*.csv
+*.tsv
+*.h5
+*.pkl
+*.joblib
+*.zip
+
+# ===============================
+#  Logs and temporary files
+# ===============================
+logs/
+*.log
+tmp/
+temp/
+
+# ===============================
+#  System / IDE files
+# ===============================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ===============================
+#  Model files (optional, large)
+# ===============================
+*.h5
+*.pt
+*.pth
+*.onnx
+
+# ===============================
+#  Streamlit / Web cache
+# ===============================
+.streamlit/

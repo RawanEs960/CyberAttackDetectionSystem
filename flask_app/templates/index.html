@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-8">
+
+            <div class="card shadow-lg">
+
+                <div class="card-body p-5">
+
+                    <h2 class="text-center mb-4">
+
+                        Cyber Attack Detection System
+
+                    </h2>
+
+                    <p class="text-center text-muted">
+
+                        Upload a CSV file containing network traffic records
+                        to detect cyber attacks using the optimized XGBoost model.
+
+                    </p>
+
+                    <form
+
+                        id="uploadForm"
+
+                        action="/predict"
+
+                        method="POST"
+
+                        enctype="multipart/form-data"
+
+                    >
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+
+                                Choose CSV File
+
+                            </label>
+
+                            <input
+
+                                class="form-control"
+
+                                type="file"
+
+                                name="file"
+
+                                accept=".csv"
+
+                                required
+
+                            >
+
+                        </div>
+
+                        <div class="d-grid">
+
+                            <button
+
+                                class="btn btn-primary btn-lg"
+
+                                type="submit"
+
+                            >
+
+                                Analyze Network Traffic
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Loading Overlay -->
+
+<div id="loading">
+
+    <div>
+
+        <div
+
+            class="spinner-border text-light"
+
+            style="width:5rem;height:5rem;"
+
+            role="status">
+
+        </div>
+
+        <br><br>
+
+        <h2>
+
+            Analyzing Network Traffic...
+
+        </h2>
+
+        <p>
+
+            Please wait while the model analyzes your dataset.
+
+        </p>
+
+    </div>
+
+</div>
+
+<script>
+
+const form = document.getElementById("uploadForm");
+
+form.addEventListener("submit", function () {
+
+    document.getElementById("loading").style.display = "flex";
+
+});
+
+</script>
+
+{% endblock %}
